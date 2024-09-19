@@ -1,0 +1,4 @@
+Tecnologias utilizadas:
+Vite
+React
+TypeScript
