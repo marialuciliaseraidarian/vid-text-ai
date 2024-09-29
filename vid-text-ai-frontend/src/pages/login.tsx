@@ -28,7 +28,7 @@ export function Login() {
               <img
                 src="/image/logo_vta.png"
                 alt="VidTextAI Logo"
-                className="w-20 h-auto transition-transform duration-300 hover:scale-110"
+                className="w-24 h-auto transition-transform duration-300 hover:scale-110"
               />
               <h1 className="text-6xl text-violet-400 font-bold">VidTextAI</h1>
               <h2 className="mt-7 text-2xl text-center font-semibold">
