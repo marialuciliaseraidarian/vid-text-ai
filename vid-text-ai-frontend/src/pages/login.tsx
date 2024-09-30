@@ -85,7 +85,6 @@ export function Login() {
           <CarouselNext />
         </Carousel>
       </div>
-
       <section className="flex items-center justify-center bg-violet-300 h-full max-w-3xl w-full p-4">
         <Card className="w-full max-w-md">
           <CardHeader>
