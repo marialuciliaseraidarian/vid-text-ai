@@ -1,11 +1,11 @@
 
 # @name get-prompts
-GET http://localhost:3333/prompts
+GET http://localhost:3000/prompts
 
 ###
 
 # @name uploadVideo
-POST http://localhost:3333/videos
+POST http://localhost:3000/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -18,7 +18,7 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:3333/videos/4d03b683-ab7d-4773-921e-46a772c08c58/transcription
+POST http://localhost:3000/videos/4d03b683-ab7d-4773-921e-46a772c08c58/transcription
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
 ###
 
 # @name generate-ai-completion
-POST http://localhost:3333/ai/complete
+POST http://localhost:3000/ai/complete
 Content-Type: application/json
 
 {
@@ -36,3 +36,15 @@ Content-Type: application/json
   "temperature": 0.5,
   "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
 }
+
+###
+
+# @name login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "mls.aprendizagem@gmail.com",
+  "passwordHash": "d2a92bbdd3c9702679b10ae0d75f2b9a3ec859a9ab403df74e0eaeb055cf5f4e"
+}
+
