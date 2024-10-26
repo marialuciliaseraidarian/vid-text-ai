@@ -7,7 +7,6 @@ import {
 } from '@/components/ui/select';
 import { api } from '@/lib/axios';
 import { useEffect, useState } from 'react';
-
 interface Prompt {
   id: string;
   title: string;
